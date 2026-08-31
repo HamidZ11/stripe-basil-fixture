@@ -1,0 +1,9 @@
+{
+  "name": "stripe-basil-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Controlled fixture repository for verifying Patchwork's Stripe Basil Upcoming Invoice API impact-assessment rule against real GitHub.",
+  "dependencies": {
+    "stripe": "^18.0.0"
+  }
+}
