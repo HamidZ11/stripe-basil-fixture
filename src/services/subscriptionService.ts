@@ -15,5 +15,5 @@ export async function getInvoiceSubscriptionId(
   invoiceId: string,
 ): Promise<string | Stripe.Subscription | null> {
   const invoice = await stripe.invoices.retrieve(invoiceId);
-  return invoice.subscription;
+  return (invoice.parent?.subscription_details?.subscription ?? null);
 }
